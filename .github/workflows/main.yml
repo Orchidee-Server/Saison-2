@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: ZIPPER
-      uses: TaiStudio/Zipper@master
+      uses: "TaiStudio/Zipper@master"
         with:
           ZIPPER_IN: "./node_modules"
           ZIPPER_OUT: "./node_modules"
