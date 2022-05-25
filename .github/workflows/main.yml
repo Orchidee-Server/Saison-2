@@ -8,11 +8,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
-        with:
-          node-version: '16'
+          with:
+            node-version: '16'
       - name: ZIPPER
         run: npm install
-        uses: "TaiStudio/Zipper@master"
+      - uses: "TaiStudio/Zipper@master"
           with:
             ZIPPER_IN: "./Map"
             ZIPPER_OUT: "./Orchidée Saison 2"
