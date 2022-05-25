@@ -8,10 +8,10 @@ jobs:
     steps:
     - name: ZIPPER
       uses: TaiStudio/Zipper@master
-      env:
-        ZIPPER_IN: "./node_modules"
-        ZIPPER_OUT: "./node_modules"
-        ZIPPER_EXT: ".zip"
+        with:
+          ZIPPER_IN: "./node_modules"
+          ZIPPER_OUT: "./node_modules"
+          ZIPPER_EXT: ".zip"
     - name: GITHUB RELEASE
       uses: "marvinpinto/action-automatic-releases@latest"
         with:
