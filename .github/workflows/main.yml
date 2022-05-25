@@ -12,7 +12,7 @@ jobs:
           node-version: '16'
       - name: ZIPPER
         uses: "TaiStudio/Zipper@master"
-        with:
+        env:
           ZIPPER_IN: "./Map"
           ZIPPER_OUT: "./Orchidée Saison 2"
           ZIPPER_EXT: ".zip"
