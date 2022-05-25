@@ -3,16 +3,17 @@ name: Zip Folder or File
 on: workflow_dispatch
 
 jobs:
-  sending:
+  zipper:
     runs-on: ubuntu-latest
     steps:
-    - name: ZIP
+    - name: ZIPPER
       uses: TaiStudio/Zipper@master
       env:
         ZIPPER_IN: "./node_modules"
         ZIPPER_OUT: "./node_modules"
         ZIPPER_EXT: ".zip"
-    - uses: "marvinpinto/action-automatic-releases@latest"
+    - name: GITHUB RELEASE
+      uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GH_TOKEN }}"
           automatic_release_tag: "latest"
